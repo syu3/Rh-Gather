@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D97068D1B3694DA00C5FD42 /* hospital.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D97068C1B3694DA00C5FD42 /* hospital.jpg */; };
+		30127CF624C6C88C4AE3B15C /* libPods-Rh-血液型集まれ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BCBCC471A353814BEB609C /* libPods-Rh-血液型集まれ.a */; };
+		4B3783011B1C75A200572CF4 /* IMG_2027.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B3783001B1C75A200572CF4 /* IMG_2027.jpg */; };
+		4B4EC8511ACA7CD200590F9D /* DataUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC8501ACA7CD200590F9D /* DataUtility.swift */; };
+		4B5105241AEA4CF30037DCBF /* informationaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5105231AEA4CF30037DCBF /* informationaViewController.swift */; };
+		4B56473A1ACAD461006E70A6 /* btn057_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B5647391ACAD461006E70A6 /* btn057_09.png */; };
+		4B8952221ACD467F00B0D4EC /* sizuku.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8952211ACD467F00B0D4EC /* sizuku.png */; };
+		4B8B34591AD9EDCF007D0C10 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B34581AD9EDCF007D0C10 /* lion.png */; };
+		4B9F89D31AFDB3DC004D4166 /* requestEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F89D21AFDB3DC004D4166 /* requestEndViewController.swift */; };
+		4BA0553D1ACFAE7300E53CE1 /* KakuninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0553C1ACFAE7300E53CE1 /* KakuninViewController.swift */; };
+		4BA3EDD91AC820D1005F7678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3EDD81AC820D1005F7678 /* AppDelegate.swift */; };
+		4BA3EDDB1AC820D1005F7678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3EDDA1AC820D1005F7678 /* ViewController.swift */; };
+		4BA3EDDE1AC820D1005F7678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3EDDC1AC820D1005F7678 /* Main.storyboard */; };
+		4BA3EDE01AC820D1005F7678 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3EDDF1AC820D1005F7678 /* Images.xcassets */; };
+		4BA3EDE31AC820D1005F7678 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3EDE11AC820D1005F7678 /* LaunchScreen.xib */; };
+		4BA3EDEF1AC820D1005F7678 /* Rh_______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3EDEE1AC820D1005F7678 /* Rh_______Tests.swift */; };
+		4BA3EDF91AC8312E005F7678 /* kinkyuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3EDF81AC8312E005F7678 /* kinkyuViewController.swift */; };
+		4BA3EDFD1AC83169005F7678 /* johoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3EDFC1AC83169005F7678 /* johoViewController.swift */; };
+		4BA3EDFF1AC8317D005F7678 /* LebelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3EDFE1AC8317D005F7678 /* LebelViewController.swift */; };
+		4BA52DDD1AEFB02D00D11DFD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA52DDC1AEFB02D00D11DFD /* CoreLocation.framework */; };
+		4BB3CC7C1B085C4800F7895F /* lionRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB3CC7B1B085C4800F7895F /* lionRed.png */; };
+		4BBF4C2D1ACAF94100E60FED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBF4C2C1ACAF94100E60FED /* Foundation.framework */; };
+		4BCED57B1AF8540D0090E9FA /* ihone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BCED57A1AF8540D0090E9FA /* ihone.jpg */; };
+		4BD194A61AF4C4480087946E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD194A51AF4C4480087946E /* CoreImage.framework */; };
+		4BE32BC71ACC23A00052DE60 /* sekijuzi.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE32BC61ACC23A00052DE60 /* sekijuzi.png */; };
+		4BE32BC91ACC27D00052DE60 /* juuzi.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE32BC81ACC27D00052DE60 /* juuzi.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B7846A91B1F17E700F758C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA3EDCB1AC820D1005F7678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA3EDD21AC820D1005F7678;
+			remoteInfo = "Rh-血液型集まれ";
+		};
+		4B7846AB1B1F17E800F758C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA3EDCB1AC820D1005F7678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA3EDD21AC820D1005F7678;
+			remoteInfo = "Rh-血液型集まれ";
+		};
+		4BA3EDE91AC820D1005F7678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA3EDCB1AC820D1005F7678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA3EDD21AC820D1005F7678;
+			remoteInfo = "Rh-血液型集まれ";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D97068C1B3694DA00C5FD42 /* hospital.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospital.jpg; sourceTree = "<group>"; };
+		4B30BBB41B088F1D0003B53F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4B3470631ACAECD700609589 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4B3783001B1C75A200572CF4 /* IMG_2027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2027.jpg; sourceTree = "<group>"; };
+		4B4EC8501ACA7CD200590F9D /* DataUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtility.swift; sourceTree = "<group>"; };
+		4B5105231AEA4CF30037DCBF /* informationaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = informationaViewController.swift; sourceTree = "<group>"; };
+		4B5647391ACAD461006E70A6 /* btn057_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn057_09.png; sourceTree = "<group>"; };
+		4B8952211ACD467F00B0D4EC /* sizuku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sizuku.png; sourceTree = "<group>"; };
+		4B8B34581AD9EDCF007D0C10 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		4B9F89D21AFDB3DC004D4166 /* requestEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestEndViewController.swift; sourceTree = "<group>"; };
+		4BA0553C1ACFAE7300E53CE1 /* KakuninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakuninViewController.swift; sourceTree = "<group>"; };
+		4BA3EDD31AC820D1005F7678 /* Rh-血液型集まれ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rh-血液型集まれ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3EDD71AC820D1005F7678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA3EDD81AC820D1005F7678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BA3EDDA1AC820D1005F7678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BA3EDDD1AC820D1005F7678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BA3EDDF1AC820D1005F7678 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BA3EDE21AC820D1005F7678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4BA3EDE81AC820D1005F7678 /* Rh-血液型集まれTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rh-血液型集まれTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3EDED1AC820D1005F7678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA3EDEE1AC820D1005F7678 /* Rh_______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rh_______Tests.swift"; sourceTree = "<group>"; };
+		4BA3EDF81AC8312E005F7678 /* kinkyuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kinkyuViewController.swift; sourceTree = "<group>"; };
+		4BA3EDFC1AC83169005F7678 /* johoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = johoViewController.swift; sourceTree = "<group>"; };
+		4BA3EDFE1AC8317D005F7678 /* LebelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LebelViewController.swift; sourceTree = "<group>"; };
+		4BA52DDC1AEFB02D00D11DFD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4BB3CC7B1B085C4800F7895F /* lionRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lionRed.png; sourceTree = "<group>"; };
+		4BBF4C2C1ACAF94100E60FED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BCED57A1AF8540D0090E9FA /* ihone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ihone.jpg; sourceTree = "<group>"; };
+		4BD194A51AF4C4480087946E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		4BE32BC61ACC23A00052DE60 /* sekijuzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sekijuzi.png; sourceTree = "<group>"; };
+		4BE32BC81ACC27D00052DE60 /* juuzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juuzi.png; sourceTree = "<group>"; };
+		4BFFEBC01AC8419F008F3576 /* Rh-血液型集まれ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rh-血液型集まれ-Bridging-Header.h"; sourceTree = "<group>"; };
+		71A6B598256E0C519D45C740 /* Pods-Rh-血液型集まれ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rh-血液型集まれ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rh-血液型集まれ/Pods-Rh-血液型集まれ.debug.xcconfig"; sourceTree = "<group>"; };
+		94BCBCC471A353814BEB609C /* libPods-Rh-血液型集まれ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rh-血液型集まれ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F657B600934F91113A00CB91 /* Pods-Rh-血液型集まれ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rh-血液型集まれ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rh-血液型集まれ/Pods-Rh-血液型集まれ.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BA3EDD01AC820D1005F7678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD194A61AF4C4480087946E /* CoreImage.framework in Frameworks */,
+				4BA52DDD1AEFB02D00D11DFD /* CoreLocation.framework in Frameworks */,
+				4BBF4C2D1ACAF94100E60FED /* Foundation.framework in Frameworks */,
+				30127CF624C6C88C4AE3B15C /* libPods-Rh-血液型集まれ.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3EDE51AC820D1005F7678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BA3EDCA1AC820D1005F7678 = {
+			isa = PBXGroup;
+			children = (
+				2D97068C1B3694DA00C5FD42 /* hospital.jpg */,
+				4B3783001B1C75A200572CF4 /* IMG_2027.jpg */,
+				4BA9F27D1AD2AE3400520793 /* ImageFile */,
+				4BA3EDD51AC820D1005F7678 /* Rh-血液型集まれ */,
+				4BA3EDEB1AC820D1005F7678 /* Rh-血液型集まれTests */,
+				4BA3EDD41AC820D1005F7678 /* Products */,
+				DD23D3FA49813A1AFFB58322 /* Pods */,
+				72910D228CE1A820223957FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BA3EDD41AC820D1005F7678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3EDD31AC820D1005F7678 /* Rh-血液型集まれ.app */,
+				4BA3EDE81AC820D1005F7678 /* Rh-血液型集まれTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BA3EDD51AC820D1005F7678 /* Rh-血液型集まれ */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3EDD81AC820D1005F7678 /* AppDelegate.swift */,
+				4BA3EDDA1AC820D1005F7678 /* ViewController.swift */,
+				4BA3EDF81AC8312E005F7678 /* kinkyuViewController.swift */,
+				4BA0553C1ACFAE7300E53CE1 /* KakuninViewController.swift */,
+				4B5105231AEA4CF30037DCBF /* informationaViewController.swift */,
+				4BA3EDFC1AC83169005F7678 /* johoViewController.swift */,
+				4B9F89D21AFDB3DC004D4166 /* requestEndViewController.swift */,
+				4BA3EDFE1AC8317D005F7678 /* LebelViewController.swift */,
+				4B4EC8501ACA7CD200590F9D /* DataUtility.swift */,
+				4BA3EDDC1AC820D1005F7678 /* Main.storyboard */,
+				4BA3EDDF1AC820D1005F7678 /* Images.xcassets */,
+				4BA3EDE11AC820D1005F7678 /* LaunchScreen.xib */,
+				4BA3EDD61AC820D1005F7678 /* Supporting Files */,
+			);
+			path = "Rh-血液型集まれ";
+			sourceTree = "<group>";
+		};
+		4BA3EDD61AC820D1005F7678 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3EDD71AC820D1005F7678 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BA3EDEB1AC820D1005F7678 /* Rh-血液型集まれTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3EDEE1AC820D1005F7678 /* Rh_______Tests.swift */,
+				4BA3EDEC1AC820D1005F7678 /* Supporting Files */,
+			);
+			path = "Rh-血液型集まれTests";
+			sourceTree = "<group>";
+		};
+		4BA3EDEC1AC820D1005F7678 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3EDED1AC820D1005F7678 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BA9F27D1AD2AE3400520793 /* ImageFile */ = {
+			isa = PBXGroup;
+			children = (
+				4BB3CC7B1B085C4800F7895F /* lionRed.png */,
+				4BCED57A1AF8540D0090E9FA /* ihone.jpg */,
+				4B5647391ACAD461006E70A6 /* btn057_09.png */,
+				4BE32BC61ACC23A00052DE60 /* sekijuzi.png */,
+				4BE32BC81ACC27D00052DE60 /* juuzi.png */,
+				4B8952211ACD467F00B0D4EC /* sizuku.png */,
+				4B8B34581AD9EDCF007D0C10 /* lion.png */,
+			);
+			path = ImageFile;
+			sourceTree = "<group>";
+		};
+		72910D228CE1A820223957FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B30BBB41B088F1D0003B53F /* QuartzCore.framework */,
+				4BD194A51AF4C4480087946E /* CoreImage.framework */,
+				4BA52DDC1AEFB02D00D11DFD /* CoreLocation.framework */,
+				4BBF4C2C1ACAF94100E60FED /* Foundation.framework */,
+				4B3470631ACAECD700609589 /* AVFoundation.framework */,
+				94BCBCC471A353814BEB609C /* libPods-Rh-血液型集まれ.a */,
+				4BFFEBC01AC8419F008F3576 /* Rh-血液型集まれ-Bridging-Header.h */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD23D3FA49813A1AFFB58322 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71A6B598256E0C519D45C740 /* Pods-Rh-血液型集まれ.debug.xcconfig */,
+				F657B600934F91113A00CB91 /* Pods-Rh-血液型集まれ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BA3EDD21AC820D1005F7678 /* Rh-血液型集まれ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA3EDF21AC820D1005F7678 /* Build configuration list for PBXNativeTarget "Rh-血液型集まれ" */;
+			buildPhases = (
+				CE8A72D50239859C677C0ECE /* Check Pods Manifest.lock */,
+				4BA3EDCF1AC820D1005F7678 /* Sources */,
+				4BA3EDD01AC820D1005F7678 /* Frameworks */,
+				4BA3EDD11AC820D1005F7678 /* Resources */,
+				FD71B75FC7E97F276404ECD9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rh-血液型集まれ";
+			productName = "Rh-血液型集まれ";
+			productReference = 4BA3EDD31AC820D1005F7678 /* Rh-血液型集まれ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BA3EDE71AC820D1005F7678 /* Rh-血液型集まれTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA3EDF51AC820D1005F7678 /* Build configuration list for PBXNativeTarget "Rh-血液型集まれTests" */;
+			buildPhases = (
+				4BA3EDE41AC820D1005F7678 /* Sources */,
+				4BA3EDE51AC820D1005F7678 /* Frameworks */,
+				4BA3EDE61AC820D1005F7678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA3EDEA1AC820D1005F7678 /* PBXTargetDependency */,
+				4B7846AA1B1F17E700F758C8 /* PBXTargetDependency */,
+				4B7846AC1B1F17E800F758C8 /* PBXTargetDependency */,
+			);
+			name = "Rh-血液型集まれTests";
+			productName = "Rh-血液型集まれTests";
+			productReference = 4BA3EDE81AC820D1005F7678 /* Rh-血液型集まれTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BA3EDCB1AC820D1005F7678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = mycompany;
+				TargetAttributes = {
+					4BA3EDD21AC820D1005F7678 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8ZAWDKU8Y5;
+					};
+					4BA3EDE71AC820D1005F7678 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 4BA3EDD21AC820D1005F7678;
+					};
+				};
+			};
+			buildConfigurationList = 4BA3EDCE1AC820D1005F7678 /* Build configuration list for PBXProject "Rh-血液型集まれ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BA3EDCA1AC820D1005F7678;
+			productRefGroup = 4BA3EDD41AC820D1005F7678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BA3EDD21AC820D1005F7678 /* Rh-血液型集まれ */,
+				4BA3EDE71AC820D1005F7678 /* Rh-血液型集まれTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BA3EDD11AC820D1005F7678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8952221ACD467F00B0D4EC /* sizuku.png in Resources */,
+				4BE32BC91ACC27D00052DE60 /* juuzi.png in Resources */,
+				4B56473A1ACAD461006E70A6 /* btn057_09.png in Resources */,
+				4BB3CC7C1B085C4800F7895F /* lionRed.png in Resources */,
+				4BA3EDDE1AC820D1005F7678 /* Main.storyboard in Resources */,
+				4BA3EDE31AC820D1005F7678 /* LaunchScreen.xib in Resources */,
+				4B3783011B1C75A200572CF4 /* IMG_2027.jpg in Resources */,
+				4B8B34591AD9EDCF007D0C10 /* lion.png in Resources */,
+				4BE32BC71ACC23A00052DE60 /* sekijuzi.png in Resources */,
+				4BA3EDE01AC820D1005F7678 /* Images.xcassets in Resources */,
+				4BCED57B1AF8540D0090E9FA /* ihone.jpg in Resources */,
+				2D97068D1B3694DA00C5FD42 /* hospital.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3EDE61AC820D1005F7678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE8A72D50239859C677C0ECE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD71B75FC7E97F276404ECD9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rh-血液型集まれ/Pods-Rh-血液型集まれ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BA3EDCF1AC820D1005F7678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA0553D1ACFAE7300E53CE1 /* KakuninViewController.swift in Sources */,
+				4BA3EDF91AC8312E005F7678 /* kinkyuViewController.swift in Sources */,
+				4BA3EDDB1AC820D1005F7678 /* ViewController.swift in Sources */,
+				4BA3EDFD1AC83169005F7678 /* johoViewController.swift in Sources */,
+				4BA3EDD91AC820D1005F7678 /* AppDelegate.swift in Sources */,
+				4B9F89D31AFDB3DC004D4166 /* requestEndViewController.swift in Sources */,
+				4BA3EDFF1AC8317D005F7678 /* LebelViewController.swift in Sources */,
+				4B5105241AEA4CF30037DCBF /* informationaViewController.swift in Sources */,
+				4B4EC8511ACA7CD200590F9D /* DataUtility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3EDE41AC820D1005F7678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA3EDEF1AC820D1005F7678 /* Rh_______Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B7846AA1B1F17E700F758C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA3EDD21AC820D1005F7678 /* Rh-血液型集まれ */;
+			targetProxy = 4B7846A91B1F17E700F758C8 /* PBXContainerItemProxy */;
+		};
+		4B7846AC1B1F17E800F758C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA3EDD21AC820D1005F7678 /* Rh-血液型集まれ */;
+			targetProxy = 4B7846AB1B1F17E800F758C8 /* PBXContainerItemProxy */;
+		};
+		4BA3EDEA1AC820D1005F7678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA3EDD21AC820D1005F7678 /* Rh-血液型集まれ */;
+			targetProxy = 4BA3EDE91AC820D1005F7678 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BA3EDDC1AC820D1005F7678 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA3EDDD1AC820D1005F7678 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		4BA3EDE11AC820D1005F7678 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA3EDE21AC820D1005F7678 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BA3EDF01AC820D1005F7678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BA3EDF11AC820D1005F7678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BA3EDF31AC820D1005F7678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A6B598256E0C519D45C740 /* Pods-Rh-血液型集まれ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Rh-血液型集まれ/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos8.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4BA3EDF41AC820D1005F7678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F657B600934F91113A00CB91 /* Pods-Rh-血液型集まれ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Rh-血液型集まれ/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos8.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4BA3EDF61AC820D1005F7678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rh-血液型集まれTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rh-血液型集まれ.app/Rh-血液型集まれ";
+			};
+			name = Debug;
+		};
+		4BA3EDF71AC820D1005F7678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rh-血液型集まれTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rh-血液型集まれ.app/Rh-血液型集まれ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BA3EDCE1AC820D1005F7678 /* Build configuration list for PBXProject "Rh-血液型集まれ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3EDF01AC820D1005F7678 /* Debug */,
+				4BA3EDF11AC820D1005F7678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA3EDF21AC820D1005F7678 /* Build configuration list for PBXNativeTarget "Rh-血液型集まれ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3EDF31AC820D1005F7678 /* Debug */,
+				4BA3EDF41AC820D1005F7678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA3EDF51AC820D1005F7678 /* Build configuration list for PBXNativeTarget "Rh-血液型集まれTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3EDF61AC820D1005F7678 /* Debug */,
+				4BA3EDF71AC820D1005F7678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BA3EDCB1AC820D1005F7678 /* Project object */;
+}
