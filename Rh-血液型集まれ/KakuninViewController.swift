@@ -129,7 +129,7 @@ class KakuninViewController: UIViewController {
         indispensableLabel5.hidden = true
         indispensableLabel6.hidden = true
         indispensableLabel7.hidden = true
-        
+        　
         var pinNumber1 = arc4random_uniform(9)
         var pinNumber2 = arc4random_uniform(9)
         var pinNumber3 = arc4random_uniform(9)
