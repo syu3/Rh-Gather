@@ -43,9 +43,6 @@ class KakuninViewController: UIViewController {
     var info = [PFObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        picture = UIImage(named: "IMG_2027.jpg")
-        
-        
         self.loadData { (objects, error) -> () in
             for object in objects {
                 self.info.append(object as PFObject)
@@ -115,7 +112,7 @@ class KakuninViewController: UIViewController {
             
             NSLog("顔認識")
         }
-        　
+        
         
         
         

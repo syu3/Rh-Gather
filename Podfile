@@ -2,7 +2,7 @@
 # platform :ios, ‘6.0’
 
 target 'Rh-血液型集まれ' do
-pod 'Parse', '~> 1.7.0’
+pod 'Parse', '~> 1.7.4’
 pod 'SVProgressHUD'
 end
 

@@ -151,16 +151,6 @@ class informationaViewController: UIViewController {
         
         endTheState = self.pictures[junban].objectForKey("end") as String
         
-        if(endTheState == "end"){
-            
-             cell.backgroundColor = UIColor(red: 0.7, green:0.6 , blue: 0.5, alpha: 1.0)
-            
-            
-        }else{
-            cell.backgroundColor = UIColor(red: 1.0, green:0.6 , blue: 0.6, alpha: 1.0)
-           
-            
-        }
 
         if(junban == 0){
             NSLog("--------------------------------------------------------------------------------")
@@ -173,7 +163,17 @@ class informationaViewController: UIViewController {
         }else if(naiyou == 1){
             cell.textLabel?.text = self.pictures[junban].objectForKey("byoin") as String?
         }
-        
+            if(endTheState == "end"){
+                cell.textLabel?.text = "この依頼は終了しました"
+                cell.backgroundColor = UIColor(red: 0.7, green:0.6 , blue: 0.5, alpha: 1.0)
+                
+                
+            }else{
+                cell.backgroundColor = UIColor(red: 1.0, green:0.6 , blue: 0.6, alpha: 1.0)
+                
+                
+            }
+
         //とってきた順番をかえる配列の[0]目に入れていく
         
         
