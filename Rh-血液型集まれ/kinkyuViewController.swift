@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate,CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
-    
+    @IBOutlet var scrollView : UIScrollView!
     @IBOutlet var jushoField : UITextField!
     @IBOutlet var name : UITextField!
     @IBOutlet var koment : UITextView!
@@ -314,7 +314,6 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
 
 
 //ボタンイベント.
-
 
 
 }
