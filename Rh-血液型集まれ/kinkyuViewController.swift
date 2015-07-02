@@ -55,24 +55,13 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         byoin.text = ""
         ka.text = ""
 
-        
-        
-        
-        
+
             byoin.text = ""
             jushoField.text = ""
             NSLog("transmissionNumberは%d",transmissionNumber)
             
             if transmissionNumber == 1{
-//                byoin.text = NSUserDefaults.standardUserDefaults().stringForKey("hospital")!
-//                ka.text = NSUserDefaults.standardUserDefaults().stringForKey("currentPlace")!
-//                jushoField.text = NSUserDefaults.standardUserDefaults().stringForKey("address")!
-//                koment.text = NSUserDefaults.standardUserDefaults().stringForKey("comment")!
-//                name.text = NSUserDefaults.standardUserDefaults().stringForKey("name")!
-//                
-                
-                
-                
+ 
             }else{
                 
             }
@@ -315,5 +304,19 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
 
 //ボタンイベント.
 
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+
+        UIView.animateWithDuration(0.2, delay: 0.0, options: nil, animations: {
+            self.view.center = CGPointMake(self.view.center.x, self.view.center.y - 150)
+            }, completion: nil)
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+
+        UIView.animateWithDuration(0.2, delay: 0.0, options: nil, animations: {
+            self.view.center = CGPointMake(self.view.center.x, self.view.center.y + 150)
+            }, completion: nil)
+    }
 
 }
