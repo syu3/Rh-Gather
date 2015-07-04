@@ -136,11 +136,11 @@ class KakuninViewController: UIViewController {
         var pin3 = String(pinNumber3)
         var pin4 = String(pinNumber4)
         //パスワードを再発行します！
-        var string1 = "4"
+
         
         
         pinCode = pin1 + pin2 + pin3 + pin4
-        NSLog("pinCode%@",pinCode)
+        
         
         pinLabel1.text = String(pinNumber1)
         pinLabel2.text = String(pinNumber2)
@@ -154,7 +154,7 @@ class KakuninViewController: UIViewController {
         commentLabel.text = commentString
         pictureImageView.image = picture
         hospitalNameLabel.text = hospitalNameString
-        
+        NSLog("pinCode%@",pinCode)
         // Do any additional setup after loading the view.
     }
     func loadData(callback:([PFObject]!, NSError!) -> ())  {

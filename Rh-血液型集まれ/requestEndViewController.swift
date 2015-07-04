@@ -10,6 +10,13 @@ import UIKit
 import QuartzCore
 
 class requestEndViewController: UIViewController {
+    @IBOutlet weak var upDateBackGround: UILabel!
+    @IBOutlet weak var upDateButtonImage: UIImageView!
+    @IBOutlet weak var upDateLabel: UILabel!
+    @IBOutlet weak var upDateImage: UIImageView!
+    @IBOutlet weak var upDateButton: UIButton!
+    
+    
     @IBOutlet var backLabel : UILabel!
     @IBOutlet var backLabel1 : UILabel!
     @IBOutlet var cancelButton : UIButton!
@@ -25,7 +32,6 @@ class requestEndViewController: UIViewController {
     
     
     var pinTextField : UITextField!//暗証番号を入力するためのTextField
-    
     var pinCodeString : NSString!
     var bashoString : String!
     var byoinString : String!
@@ -38,6 +44,13 @@ class requestEndViewController: UIViewController {
     var numer = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.upDateBackGround.hidden = true
+        self.upDateButton.hidden = true
+        self.upDateButtonImage.hidden = true
+        self.upDateImage.hidden = true
+        self.upDateLabel.hidden = true
+        
         self.loadData { (objects, error) -> () in
             for object in objects {
                 self.info.append(object as PFObject)
@@ -49,7 +62,7 @@ class requestEndViewController: UIViewController {
     }
     
     @IBAction func ok(){
-        self.numer = 0
+        
         backLabel.hidden = true
         backLabel1.hidden = true
         okButton.hidden = true
@@ -90,13 +103,44 @@ class requestEndViewController: UIViewController {
                                 alert.message = "依頼を終了しました"
                                 alert.addButtonWithTitle("OK")
                                 alert.show()
+                                
+                                self.upDateBackGround.hidden = false
+                                self.upDateButton.hidden = false
+                                self.upDateButtonImage.hidden = false
+                                self.upDateImage.hidden = false
+                                self.upDateLabel.hidden = false
+
+                                
+                                
                                 self.backLabel.hidden = false
                                 self.backLabel1.hidden = false
                                 self.okButton.hidden = false
                                 self.cancelButton.hidden = false
                                 SVProgressHUD.dismiss()
+                                
+                                
+                                
+                                
+                                
+
                             }
                             
+                        }else{
+                            self.numer = self.numer + 1
+                            if(self.numer == 1){
+                            var alert = UIAlertView()
+                            alert.title = "注意"
+                            alert.message = "暗証番号が一致しません。"
+                            alert.addButtonWithTitle("OK")
+                            alert.show()
+                            self.backLabel.hidden = false
+                            self.backLabel1.hidden = false
+                            self.okButton.hidden = false
+                            self.cancelButton.hidden = false
+                            SVProgressHUD.dismiss()
+                            }else{
+                                
+                            }
                         }
                     }else{
                         NSLog("errorあるよ")
@@ -112,6 +156,14 @@ class requestEndViewController: UIViewController {
         }
         presentViewController(myAlert, animated: true, completion: nil)
         
+    }
+    @IBAction func upDateOK(sender: AnyObject) {
+        self.upDateBackGround.hidden = true
+        self.upDateButton.hidden = true
+        self.upDateButtonImage.hidden = true
+        self.upDateImage.hidden = true
+        self.upDateLabel.hidden = true
+
     }
     
     func loadData(callback:([PFObject]!, NSError!) -> ())  {

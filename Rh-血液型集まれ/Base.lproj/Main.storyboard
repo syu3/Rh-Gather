@@ -383,7 +383,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bg-1a-EJz">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bg-1a-EJz">
                                 <rect key="frame" x="16" y="272" width="343" height="122"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
@@ -415,6 +415,35 @@
                                     <action selector="ok" destination="5pZ-hB-enO" eventType="touchUpInside" id="U3i-7y-T2m"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvp-37-t3T">
+                                <rect key="frame" x="16" y="158" width="343" height="412"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="依頼終了後は、情報画面の依頼情報を、下にスワイプしてください。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27e-p2-9Kp">
+                                <rect key="frame" x="34" y="177" width="307" height="41"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn057_09.png" translatesAutoresizingMaskIntoConstraints="NO" id="nBc-yh-XCH">
+                                <rect key="frame" x="122" y="509" width="131" height="42"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHA-u8-Jgm">
+                                <rect key="frame" x="122" y="509" width="131" height="42"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.61432456369999999" green="0.0" blue="0.85536910079999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upDateOK:" destination="5pZ-hB-enO" eventType="touchUpInside" id="xXD-6D-uxc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_2279.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="I0l-hl-kFC">
+                                <rect key="frame" x="-10" y="226" width="395" height="253"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -426,6 +455,11 @@
                         <outlet property="backLabel1" destination="c1H-DH-3Q1" id="mZr-S5-SrY"/>
                         <outlet property="cancelButton" destination="tyI-wY-EWJ" id="Pf1-a5-YXb"/>
                         <outlet property="okButton" destination="e2P-sn-BBm" id="NUj-zl-4JN"/>
+                        <outlet property="upDateBackGround" destination="kvp-37-t3T" id="YCe-YM-Kzc"/>
+                        <outlet property="upDateButton" destination="EHA-u8-Jgm" id="wOy-zz-X0k"/>
+                        <outlet property="upDateButtonImage" destination="nBc-yh-XCH" id="DQ9-XM-lqc"/>
+                        <outlet property="upDateImage" destination="I0l-hl-kFC" id="F1P-qZ-2j1"/>
+                        <outlet property="upDateLabel" destination="27e-p2-9Kp" id="pqV-Ao-YZW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enQ-th-CJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -989,6 +1023,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_2279.jpg" width="744" height="757"/>
         <image name="btn057_09.png" width="180" height="30"/>
         <image name="hospital.png" width="550" height="449"/>
         <image name="house のコピー.png" width="319" height="321"/>
