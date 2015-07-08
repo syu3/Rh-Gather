@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var pictures : UIImage?
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        
         // Override point for customization after application launch.
         var ID : String = "OJPrlNLhqPEqTOdEELXjn8s4sYDaIrywMbylrrIt"
         var Key : String = "IDJhl7xEz5KMVFbXbdj6LcleVhVaioiehFL7O69A"

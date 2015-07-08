@@ -34,7 +34,8 @@ class KakuninViewController: UIViewController {
     @IBOutlet var indispensableLabel4 : UILabel!//住所必須
     @IBOutlet var indispensableLabel5 : UILabel!//名前必須
     @IBOutlet var indispensableLabel6 : UILabel!//コメント必須
-    @IBOutlet var indispensableLabel7 : UILabel!//顔写真必須
+    @IBOutlet var indispensableLabel7 : UILabel!//顔認識必須
+    @IBOutlet var indispensableLabel8 : UILabel!//顔認識必須
     var numberInt = 0
     @IBOutlet var pinLabel1 : UILabel!
     @IBOutlet var pinLabel2 : UILabel!
@@ -65,7 +66,9 @@ class KakuninViewController: UIViewController {
         
         //
         //        picture = self.info.last?.objectForKey("faceImage") as? UIImage
-        
+        if(picture == nil){
+            NSLog("nilnilnil")
+        }else{
         NSLog("kakunin")
         //        // リサイズ
         let size = CGSize(width: 60, height: 80)
@@ -114,7 +117,7 @@ class KakuninViewController: UIViewController {
         }
         
         
-        
+        }
         
         
         isSending = false
@@ -126,6 +129,8 @@ class KakuninViewController: UIViewController {
         indispensableLabel5.hidden = true
         indispensableLabel6.hidden = true
         indispensableLabel7.hidden = true
+        indispensableLabel8.hidden = true
+
         
         var pinNumber1 = arc4random_uniform(9)
         var pinNumber2 = arc4random_uniform(9)
@@ -211,12 +216,17 @@ class KakuninViewController: UIViewController {
                 indispensableLabel6.hidden = true
             }
             if facialRecognition == 1{
+                NSLog("111")
                 indispensableLabel7.hidden = false
             }else{
                 indispensableLabel7.hidden = true
             }
-            
-            if addressString == ""||hospitalNameString == ""||currentPlaceLabel == ""||nameString == ""||commentString == ""||facialRecognition == 1{
+            if(picture == nil){
+                indispensableLabel8.hidden = false
+            }else{
+                indispensableLabel8.hidden = true
+            }
+            if addressString == ""||hospitalNameString == ""||currentPlaceLabel == ""||nameString == ""||commentString == ""||facialRecognition == 1||picture == nil{
                 NSLog("空")
                 let myAlert = UIAlertController(title: "警告", message: "詳細情報をすべて入力してください。", preferredStyle: .Alert)
                 // UIAlertを発動する.

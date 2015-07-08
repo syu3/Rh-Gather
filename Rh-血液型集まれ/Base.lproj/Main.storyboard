@@ -289,6 +289,12 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="※" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-UT-rSJ">
+                                <rect key="frame" x="18" y="464" width="19" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -307,6 +313,7 @@
                         <outlet property="indispensableLabel5" destination="Gid-mB-Pot" id="ajy-z3-60W"/>
                         <outlet property="indispensableLabel6" destination="RS7-BN-uOj" id="bRG-13-Ijj"/>
                         <outlet property="indispensableLabel7" destination="Gbk-N1-rV2" id="5xl-Xp-cOs"/>
+                        <outlet property="indispensableLabel8" destination="RVS-UT-rSJ" id="qXY-xB-zpS"/>
                         <outlet property="nameLabel" destination="yhL-6o-wBm" id="dMe-2V-YqI"/>
                         <outlet property="pictureImageView" destination="Uqe-EZ-H3g" id="16a-1F-nBp"/>
                         <outlet property="pinLabel1" destination="lbv-xv-n9z" id="dix-lA-rRo"/>
@@ -396,16 +403,8 @@
                                 <color key="textColor" red="1" green="0.017791970800000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyI-wY-EWJ">
-                                <rect key="frame" x="29" y="342" width="135" height="36"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="27"/>
-                                <state key="normal" title="終了しない">
-                                    <color key="titleColor" red="1" green="0.017791970800000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2P-sn-BBm">
-                                <rect key="frame" x="223" y="340" width="119" height="36"/>
+                                <rect key="frame" x="128" y="335" width="119" height="36"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="27"/>
                                 <state key="normal" title="終了する">
                                     <color key="titleColor" red="1" green="0.017791970800000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -453,7 +452,6 @@
                     <connections>
                         <outlet property="backLabel" destination="9bg-1a-EJz" id="5Ei-2C-fTJ"/>
                         <outlet property="backLabel1" destination="c1H-DH-3Q1" id="mZr-S5-SrY"/>
-                        <outlet property="cancelButton" destination="tyI-wY-EWJ" id="Pf1-a5-YXb"/>
                         <outlet property="okButton" destination="e2P-sn-BBm" id="NUj-zl-4JN"/>
                         <outlet property="upDateBackGround" destination="kvp-37-t3T" id="YCe-YM-Kzc"/>
                         <outlet property="upDateButton" destination="EHA-u8-Jgm" id="wOy-zz-X0k"/>
@@ -652,11 +650,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="名前" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wLF-2g-If6">
+                                <rect key="frame" x="48" y="430" width="177" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn057_09.png" translatesAutoresizingMaskIntoConstraints="NO" id="JDV-Yw-fSl">
-                                <rect key="frame" x="243" y="244" width="112" height="24"/>
+                                <rect key="frame" x="244" y="244" width="112" height="24"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiN-3U-ezl">
-                                <rect key="frame" x="247" y="240" width="105" height="30"/>
+                                <rect key="frame" x="248" y="240" width="105" height="30"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="15"/>
                                 <state key="normal" title="現在地から取得">
                                     <color key="titleColor" red="1" green="0.050852832989999999" blue="0.1318804952" alpha="1" colorSpace="calibratedRGB"/>
@@ -666,12 +670,6 @@
                                     <action selector="currentPlace" destination="V93-I1-KMd" eventType="touchUpInside" id="hqD-Tn-DiG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="名前" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wLF-2g-If6">
-                                <rect key="frame" x="48" y="430" width="177" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
