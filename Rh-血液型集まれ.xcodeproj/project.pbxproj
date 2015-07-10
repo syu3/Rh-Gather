@@ -71,6 +71,7 @@
 		2D4CDC021B3E2387001E9A4D /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hospital.png; sourceTree = "<group>"; };
 		2D7F54241B480AB500FD9306 /* IMG_2279.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2279.jpg; sourceTree = "<group>"; };
 		2DBC2EAD1B3FF09500C051FE /* icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 2.png"; sourceTree = "<group>"; };
+		2DE02E281B4FE7E400659CD6 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		2DE512DF1B4A90980056B8B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
 		4B30BBB41B088F1D0003B53F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -222,6 +223,7 @@
 		72910D228CE1A820223957FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DE02E281B4FE7E400659CD6 /* SafariServices.framework */,
 				2DE512DF1B4A90980056B8B0 /* MapKit.framework */,
 				4B30BBB41B088F1D0003B53F /* QuartzCore.framework */,
 				4BD194A51AF4C4480087946E /* CoreImage.framework */,

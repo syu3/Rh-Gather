@@ -12,10 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var myUserDafault:NSUserDefaults = NSUserDefaults()
     var pictures : UIImage?
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //登録されているUserDefaultに+1する
+        var count:Int = myUserDafault.integerForKey("VisitCount") + 1
         
+        //+1した値を登録する
+        myUserDafault.setObject(count, forKey: "VisitCount")
         
+
         // Override point for customization after application launch.
         var ID : String = "OJPrlNLhqPEqTOdEELXjn8s4sYDaIrywMbylrrIt"
         var Key : String = "IDJhl7xEz5KMVFbXbdj6LcleVhVaioiehFL7O69A"

@@ -39,8 +39,26 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var transmissionNumber : Int = 0
     var selectValue : Int = 0
     var info = [PFObject]()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //UserDefaultの生成.
+        var myUserDafault:NSUserDefaults = NSUserDefaults()
+        
+        //登録されているUserDefaultから訪問数を呼び出す.
+        var count:Int = myUserDafault.integerForKey("VisitCount")
+        
+        if(count == 1){
+            name.text = "hello"
+        }else{
+            
+        }
+        
+        
+        
         picker = UIImagePickerController()
         picker!.delegate = self
         picker!.allowsEditing = false
