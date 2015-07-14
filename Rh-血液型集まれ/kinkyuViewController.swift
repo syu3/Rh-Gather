@@ -50,13 +50,12 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         
         //登録されているUserDefaultから訪問数を呼び出す.
         var count:Int = myUserDafault.integerForKey("VisitCount")
+
         
+        NSLog(String(count))
         if(count == 1){
-            name.text = "hello"
-        }else{
             
         }
-        
         
         
         picker = UIImagePickerController()
@@ -326,14 +325,14 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     func textFieldDidBeginEditing(textField: UITextField) {
 
         UIView.animateWithDuration(0.2, delay: 0.0, options: nil, animations: {
-            self.view.center = CGPointMake(self.view.center.x, self.view.center.y - 150)
+            self.view.center = CGPointMake(self.view.center.x, self.view.center.y - 50)
             }, completion: nil)
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
 
         UIView.animateWithDuration(0.2, delay: 0.0, options: nil, animations: {
-            self.view.center = CGPointMake(self.view.center.x, self.view.center.y + 150)
+            self.view.center = CGPointMake(self.view.center.x, self.view.center.y + 50)
             }, completion: nil)
     }
 

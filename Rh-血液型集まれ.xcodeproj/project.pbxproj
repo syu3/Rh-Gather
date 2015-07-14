@@ -12,7 +12,16 @@
 		2D4CDC031B3E2387001E9A4D /* hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDC021B3E2387001E9A4D /* hospital.png */; };
 		2D7F54251B480AB500FD9306 /* IMG_2279.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7F54241B480AB500FD9306 /* IMG_2279.jpg */; };
 		2DBC2EAE1B3FF09500C051FE /* icon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC2EAD1B3FF09500C051FE /* icon 2.png */; };
+		2DD02EEC1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EEB1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard */; };
+		2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */; };
+		2DD02EF01B53EEC500A74AB5 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */; };
 		2DE512E01B4A90980056B8B0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE512DF1B4A90980056B8B0 /* MapKit.framework */; };
+		2DE821631B50F8A5001E2EAA /* kankaku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821611B50F8A5001E2EAA /* kankaku.jpg */; };
+		2DE821641B50F8A5001E2EAA /* saiketu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821621B50F8A5001E2EAA /* saiketu.jpg */; };
+		2DE821661B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821651B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png */; };
+		2DE8216A1B521824001E2EAA /* ru.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821671B521824001E2EAA /* ru.png */; };
+		2DE8216B1B521824001E2EAA /* mo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821681B521824001E2EAA /* mo.png */; };
+		2DE8216C1B521824001E2EAA /* do.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821691B521824001E2EAA /* do.png */; };
 		2DF37F8A1B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */; };
 		30127CF624C6C88C4AE3B15C /* libPods-Rh-血液型集まれ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BCBCC471A353814BEB609C /* libPods-Rh-血液型集まれ.a */; };
 		4B3783011B1C75A200572CF4 /* IMG_2027.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B3783001B1C75A200572CF4 /* IMG_2027.jpg */; };
@@ -66,17 +75,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D4CDBFE1B3E21B9001E9A4D /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
-		2D4CDC001B3E21BC001E9A4D /* house のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house のコピー.png"; sourceTree = "<group>"; };
-		2D4CDC021B3E2387001E9A4D /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hospital.png; sourceTree = "<group>"; };
-		2D7F54241B480AB500FD9306 /* IMG_2279.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2279.jpg; sourceTree = "<group>"; };
-		2DBC2EAD1B3FF09500C051FE /* icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 2.png"; sourceTree = "<group>"; };
+		2D4CDBFE1B3E21B9001E9A4D /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = ../house.png; sourceTree = "<group>"; };
+		2D4CDC001B3E21BC001E9A4D /* house のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house のコピー.png"; path = "../house のコピー.png"; sourceTree = "<group>"; };
+		2D4CDC021B3E2387001E9A4D /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hospital.png; path = ../hospital.png; sourceTree = "<group>"; };
+		2D7F54241B480AB500FD9306 /* IMG_2279.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2279.jpg; path = ../IMG_2279.jpg; sourceTree = "<group>"; };
+		2DBC2EAD1B3FF09500C051FE /* icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon 2.png"; path = "../icon 2.png"; sourceTree = "<group>"; };
+		2DD02EEB1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inchStoryboard.storyboard; sourceTree = "<group>"; };
+		2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 4inchStoryboard.storyboard; sourceTree = "<group>"; };
+		2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		2DE02E281B4FE7E400659CD6 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		2DE512DF1B4A90980056B8B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
+		2DE821611B50F8A5001E2EAA /* kankaku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kankaku.jpg; path = ../kankaku.jpg; sourceTree = "<group>"; };
+		2DE821621B50F8A5001E2EAA /* saiketu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = saiketu.jpg; path = ../saiketu.jpg; sourceTree = "<group>"; };
+		2DE821651B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-07-11 16.14.04.png"; path = "../スクリーンショット 2015-07-11 16.14.04.png"; sourceTree = "<group>"; };
+		2DE821671B521824001E2EAA /* ru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ru.png; path = ../ru.png; sourceTree = "<group>"; };
+		2DE821681B521824001E2EAA /* mo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mo.png; path = ../mo.png; sourceTree = "<group>"; };
+		2DE821691B521824001E2EAA /* do.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = do.png; path = ../do.png; sourceTree = "<group>"; };
+		2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ヒラギノ角ゴ Pro W3.otf"; path = "../ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
 		4B30BBB41B088F1D0003B53F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4B3470631ACAECD700609589 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4B3783001B1C75A200572CF4 /* IMG_2027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2027.jpg; sourceTree = "<group>"; };
+		4B3783001B1C75A200572CF4 /* IMG_2027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2027.jpg; path = ../IMG_2027.jpg; sourceTree = "<group>"; };
 		4B4EC8501ACA7CD200590F9D /* DataUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtility.swift; sourceTree = "<group>"; };
 		4B5105231AEA4CF30037DCBF /* informationaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = informationaViewController.swift; sourceTree = "<group>"; };
 		4B5647391ACAD461006E70A6 /* btn057_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn057_09.png; sourceTree = "<group>"; };
@@ -133,16 +151,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DD02EF11B53EEDB00A74AB5 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3EDDC1AC820D1005F7678 /* Main.storyboard */,
+				2DD02EEB1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard */,
+				2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */,
+				2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
 		4BA3EDCA1AC820D1005F7678 = {
 			isa = PBXGroup;
 			children = (
-				2D7F54241B480AB500FD9306 /* IMG_2279.jpg */,
-				2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */,
-				2DBC2EAD1B3FF09500C051FE /* icon 2.png */,
-				2D4CDC021B3E2387001E9A4D /* hospital.png */,
-				2D4CDBFE1B3E21B9001E9A4D /* house.png */,
-				2D4CDC001B3E21BC001E9A4D /* house のコピー.png */,
-				4B3783001B1C75A200572CF4 /* IMG_2027.jpg */,
 				4BA9F27D1AD2AE3400520793 /* ImageFile */,
 				4BA3EDD51AC820D1005F7678 /* Rh-血液型集まれ */,
 				4BA3EDEB1AC820D1005F7678 /* Rh-血液型集まれTests */,
@@ -173,7 +195,7 @@
 				4B9F89D21AFDB3DC004D4166 /* requestEndViewController.swift */,
 				4BA3EDFE1AC8317D005F7678 /* LebelViewController.swift */,
 				4B4EC8501ACA7CD200590F9D /* DataUtility.swift */,
-				4BA3EDDC1AC820D1005F7678 /* Main.storyboard */,
+				2DD02EF11B53EEDB00A74AB5 /* StoryBoard */,
 				4BA3EDDF1AC820D1005F7678 /* Images.xcassets */,
 				4BA3EDE11AC820D1005F7678 /* LaunchScreen.xib */,
 				4BA3EDD61AC820D1005F7678 /* Supporting Files */,
@@ -209,6 +231,19 @@
 		4BA9F27D1AD2AE3400520793 /* ImageFile */ = {
 			isa = PBXGroup;
 			children = (
+				2DE821671B521824001E2EAA /* ru.png */,
+				2DE821681B521824001E2EAA /* mo.png */,
+				2DE821691B521824001E2EAA /* do.png */,
+				2DE821651B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png */,
+				2DE821611B50F8A5001E2EAA /* kankaku.jpg */,
+				2DE821621B50F8A5001E2EAA /* saiketu.jpg */,
+				2D7F54241B480AB500FD9306 /* IMG_2279.jpg */,
+				2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */,
+				2DBC2EAD1B3FF09500C051FE /* icon 2.png */,
+				2D4CDC021B3E2387001E9A4D /* hospital.png */,
+				2D4CDBFE1B3E21B9001E9A4D /* house.png */,
+				2D4CDC001B3E21BC001E9A4D /* house のコピー.png */,
+				4B3783001B1C75A200572CF4 /* IMG_2027.jpg */,
 				4BB3CC7B1B085C4800F7895F /* lionRed.png */,
 				4BCED57A1AF8540D0090E9FA /* ihone.jpg */,
 				4B5647391ACAD461006E70A6 /* btn057_09.png */,
@@ -331,19 +366,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8952221ACD467F00B0D4EC /* sizuku.png in Resources */,
+				2DD02EF01B53EEC500A74AB5 /* iPadStoryboard.storyboard in Resources */,
 				4BE32BC91ACC27D00052DE60 /* juuzi.png in Resources */,
 				2DF37F8A1B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf in Resources */,
+				2DE821661B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png in Resources */,
 				4B56473A1ACAD461006E70A6 /* btn057_09.png in Resources */,
 				2D4CDC011B3E21BC001E9A4D /* house のコピー.png in Resources */,
 				4BB3CC7C1B085C4800F7895F /* lionRed.png in Resources */,
+				2DE8216B1B521824001E2EAA /* mo.png in Resources */,
 				2D4CDBFF1B3E21B9001E9A4D /* house.png in Resources */,
 				4BA3EDDE1AC820D1005F7678 /* Main.storyboard in Resources */,
 				2D7F54251B480AB500FD9306 /* IMG_2279.jpg in Resources */,
+				2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */,
 				4BA3EDE31AC820D1005F7678 /* LaunchScreen.xib in Resources */,
+				2DD02EEC1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard in Resources */,
 				4B3783011B1C75A200572CF4 /* IMG_2027.jpg in Resources */,
+				2DE8216C1B521824001E2EAA /* do.png in Resources */,
 				2DBC2EAE1B3FF09500C051FE /* icon 2.png in Resources */,
 				2D4CDC031B3E2387001E9A4D /* hospital.png in Resources */,
+				2DE821641B50F8A5001E2EAA /* saiketu.jpg in Resources */,
 				4B8B34591AD9EDCF007D0C10 /* lion.png in Resources */,
+				2DE8216A1B521824001E2EAA /* ru.png in Resources */,
+				2DE821631B50F8A5001E2EAA /* kankaku.jpg in Resources */,
 				4BE32BC71ACC23A00052DE60 /* sekijuzi.png in Resources */,
 				4BA3EDE01AC820D1005F7678 /* Images.xcassets in Resources */,
 				4BCED57B1AF8540D0090E9FA /* ihone.jpg in Resources */,
@@ -545,7 +589,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Rh-血液型集まれ/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -565,7 +609,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Rh-血液型集まれ/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

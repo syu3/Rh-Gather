@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var myUserDafault:NSUserDefaults = NSUserDefaults()
     var pictures : UIImage?
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         //登録されているUserDefaultに+1する
         var count:Int = myUserDafault.integerForKey("VisitCount") + 1
         
@@ -34,6 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         defaultACL.setPublicWriteAccess(true)
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
         
+        
+        
+        //画面の大きさを取得して、Storyboardを変える
+        //if switch文
 
         return true
     }
