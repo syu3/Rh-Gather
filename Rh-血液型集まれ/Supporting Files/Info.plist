@@ -27,6 +27,8 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
+	<string>iPadStoryboard</string>
+	<key>UIMainStoryboardFile~ipad</key>
 	<string>3.5inchStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
