@@ -9,14 +9,13 @@
 import UIKit
 import CoreLocation
 class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate,CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
-    @IBOutlet var scrollView : UIScrollView!
+
     @IBOutlet var jushoField : UITextField!
     @IBOutlet var name : UITextField!
     @IBOutlet var koment : UITextView!
     @IBOutlet var segmentedControl : UISegmentedControl!
     @IBOutlet var byoin : UITextField!
     @IBOutlet var ka : UITextField!
-    
     //    let myLat: CLLocationDegrees = 41.8319594068842
     //    let myLon: CLLocationDegrees = 140.75289384475
     var picker:UIImagePickerController!
@@ -45,6 +44,14 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        self.performSegueWithIdentifier("toSubViewController",sender: nil)
+        self.presentViewController(agreementViewController(), animated: true, completion: nil)
+        
+        
+        
+        
         //UserDefaultの生成.
         var myUserDafault:NSUserDefaults = NSUserDefaults()
         
@@ -53,9 +60,12 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
 
         
         NSLog(String(count))
-        if(count == 1){
-            
-        }
+//        if(count == 0){
+//            performSegueWithIdentifier("segue",sender: nil)
+//
+//        }else{
+//            
+//        }
         
         
         picker = UIImagePickerController()

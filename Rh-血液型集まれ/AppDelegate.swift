@@ -10,6 +10,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var navigationController: UINavigationController?
+    var viewController : UIViewController?
+    
+    var iphone4 : CGRect = CGRectMake(0.0, 0.0, 320.0, 480.0)
+    var iphone5 : CGRect = CGRectMake(0.0, 0.0, 320.0, 568.0)
+    var iphone6 : CGRect = CGRectMake(0.0, 0.0, 375.0, 667.0)
     
     var window: UIWindow?
     var myUserDafault:NSUserDefaults = NSUserDefaults()
@@ -17,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //登録されているUserDefaultに+1する
-        var count:Int = myUserDafault.integerForKey("VisitCount") + 1
+        var count:Int = myUserDafault.integerForKey("VisitCount")
         
-        //+1した値を登録する
+        //値を登録する
         myUserDafault.setObject(count, forKey: "VisitCount")
         
 
@@ -40,6 +46,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //画面の大きさを取得して、Storyboardを変える
         //if switch文
 
+        
+        
+        
+        
+        let screenWidth = Int( UIScreen.mainScreen().bounds.size.width);
+        
+        //スクリーンの高さ
+        let screenHeight = Int(UIScreen.mainScreen().bounds.size.height);
+        
+        //CGRectで取得
+        var rect : CGRect = UIScreen.mainScreen().bounds;
+        println(rect)
+        
+        if(rect == iphone4){
+            NSLog("iphone4")
+            var storyboard: UIStoryboard = UIStoryboard(name: "3.5inchStoryboard", bundle: NSBundle.mainBundle())
+            var mainViewController: UIViewController = storyboard.instantiateInitialViewController() as UIViewController
+            self.window?.rootViewController = mainViewController
+
+            
+            
+        }else if(rect == iphone5){
+            var storyboard: UIStoryboard = UIStoryboard(name: "4inchStoryboard", bundle: NSBundle.mainBundle())
+            var mainViewController: UIViewController = storyboard.instantiateInitialViewController() as UIViewController
+            self.window?.rootViewController = mainViewController
+            NSLog("iphone5")
+           
+            
+            
+        }else if(rect == iphone6){
+            var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+            var mainViewController: UIViewController = storyboard.instantiateInitialViewController() as UIViewController
+            self.window?.rootViewController = mainViewController
+            
+            
+            NSLog("iphone6")
+        }
+        
+        
+        
+        
+        
         return true
     }
 

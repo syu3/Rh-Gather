@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ahM-nV-vS8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -86,6 +86,9 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sizuku.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ibm-qe-ZDt">
+                                <rect key="frame" x="69" y="234" width="285" height="283"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="集合場所:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNW-qF-pxh">
                                 <rect key="frame" x="35" y="185" width="73" height="23"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
@@ -292,9 +295,6 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sizuku.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ibm-qe-ZDt">
-                                <rect key="frame" x="69" y="234" width="285" height="283"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -381,6 +381,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sizuku.png" translatesAutoresizingMaskIntoConstraints="NO" id="AcF-0I-Wng">
+                                <rect key="frame" x="50" y="248" width="340" height="271"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="依頼終了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJO-Oz-n1Y">
                                 <rect key="frame" x="50" y="45" width="220" height="53"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="51"/>
@@ -439,9 +442,6 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_2279.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-Bd-H2H">
                                 <rect key="frame" x="-10" y="163" width="352" height="276"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sizuku.png" translatesAutoresizingMaskIntoConstraints="NO" id="AcF-0I-Wng">
-                                <rect key="frame" x="50" y="248" width="340" height="271"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -518,6 +518,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sizuku.png" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-CJ-XVA">
+                                <rect key="frame" x="72" y="210" width="310" height="322"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcG-EL-JqC">
                                 <rect key="frame" x="35" y="140" width="282" height="105"/>
                                 <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -667,9 +670,6 @@
                                     <action selector="currentPlace" destination="aVZ-Vs-6zT" eventType="touchUpInside" id="GYP-HF-fwK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sizuku.png" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-CJ-XVA">
-                                <rect key="frame" x="72" y="210" width="310" height="322"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1026,6 +1026,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4T2-Iu-cIe"/>
-        <segue reference="PRw-T4-0e9"/>
+        <segue reference="hCb-Wo-28d"/>
     </inferredMetricsTieBreakers>
 </document>

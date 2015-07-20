@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4A49A81B5CEABF0092F530 /* agreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4A49A71B5CEABF0092F530 /* agreementViewController.swift */; };
 		2D4CDBFF1B3E21B9001E9A4D /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDBFE1B3E21B9001E9A4D /* house.png */; };
 		2D4CDC011B3E21BC001E9A4D /* house のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDC001B3E21BC001E9A4D /* house のコピー.png */; };
 		2D4CDC031B3E2387001E9A4D /* hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDC021B3E2387001E9A4D /* hospital.png */; };
@@ -24,7 +25,6 @@
 		2DE8216C1B521824001E2EAA /* do.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821691B521824001E2EAA /* do.png */; };
 		2DF37F8A1B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */; };
 		30127CF624C6C88C4AE3B15C /* libPods-Rh-血液型集まれ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BCBCC471A353814BEB609C /* libPods-Rh-血液型集まれ.a */; };
-		4B3783011B1C75A200572CF4 /* IMG_2027.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B3783001B1C75A200572CF4 /* IMG_2027.jpg */; };
 		4B4EC8511ACA7CD200590F9D /* DataUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC8501ACA7CD200590F9D /* DataUtility.swift */; };
 		4B5105241AEA4CF30037DCBF /* informationaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5105231AEA4CF30037DCBF /* informationaViewController.swift */; };
 		4B56473A1ACAD461006E70A6 /* btn057_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B5647391ACAD461006E70A6 /* btn057_09.png */; };
@@ -75,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D4A49A71B5CEABF0092F530 /* agreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = agreementViewController.swift; sourceTree = "<group>"; };
 		2D4CDBFE1B3E21B9001E9A4D /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = ../house.png; sourceTree = "<group>"; };
 		2D4CDC001B3E21BC001E9A4D /* house のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house のコピー.png"; path = "../house のコピー.png"; sourceTree = "<group>"; };
 		2D4CDC021B3E2387001E9A4D /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hospital.png; path = ../hospital.png; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ヒラギノ角ゴ Pro W3.otf"; path = "../ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
 		4B30BBB41B088F1D0003B53F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4B3470631ACAECD700609589 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4B3783001B1C75A200572CF4 /* IMG_2027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2027.jpg; path = ../IMG_2027.jpg; sourceTree = "<group>"; };
 		4B4EC8501ACA7CD200590F9D /* DataUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtility.swift; sourceTree = "<group>"; };
 		4B5105231AEA4CF30037DCBF /* informationaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = informationaViewController.swift; sourceTree = "<group>"; };
 		4B5647391ACAD461006E70A6 /* btn057_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn057_09.png; sourceTree = "<group>"; };
@@ -187,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA3EDD81AC820D1005F7678 /* AppDelegate.swift */,
+				2D4A49A71B5CEABF0092F530 /* agreementViewController.swift */,
 				4BA3EDDA1AC820D1005F7678 /* ViewController.swift */,
 				4BA3EDF81AC8312E005F7678 /* kinkyuViewController.swift */,
 				4BA0553C1ACFAE7300E53CE1 /* KakuninViewController.swift */,
@@ -243,7 +244,6 @@
 				2D4CDC021B3E2387001E9A4D /* hospital.png */,
 				2D4CDBFE1B3E21B9001E9A4D /* house.png */,
 				2D4CDC001B3E21BC001E9A4D /* house のコピー.png */,
-				4B3783001B1C75A200572CF4 /* IMG_2027.jpg */,
 				4BB3CC7B1B085C4800F7895F /* lionRed.png */,
 				4BCED57A1AF8540D0090E9FA /* ihone.jpg */,
 				4B5647391ACAD461006E70A6 /* btn057_09.png */,
@@ -380,7 +380,6 @@
 				2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */,
 				4BA3EDE31AC820D1005F7678 /* LaunchScreen.xib in Resources */,
 				2DD02EEC1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard in Resources */,
-				4B3783011B1C75A200572CF4 /* IMG_2027.jpg in Resources */,
 				2DE8216C1B521824001E2EAA /* do.png in Resources */,
 				2DBC2EAE1B3FF09500C051FE /* icon 2.png in Resources */,
 				2D4CDC031B3E2387001E9A4D /* hospital.png in Resources */,
@@ -444,6 +443,7 @@
 				4BA0553D1ACFAE7300E53CE1 /* KakuninViewController.swift in Sources */,
 				4BA3EDF91AC8312E005F7678 /* kinkyuViewController.swift in Sources */,
 				4BA3EDDB1AC820D1005F7678 /* ViewController.swift in Sources */,
+				2D4A49A81B5CEABF0092F530 /* agreementViewController.swift in Sources */,
 				4BA3EDFD1AC83169005F7678 /* johoViewController.swift in Sources */,
 				4BA3EDD91AC820D1005F7678 /* AppDelegate.swift in Sources */,
 				4B9F89D31AFDB3DC004D4166 /* requestEndViewController.swift in Sources */,
@@ -596,7 +596,7 @@
 				SDKROOT = iphoneos8.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -615,7 +615,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos8.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
