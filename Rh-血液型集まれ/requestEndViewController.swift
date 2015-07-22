@@ -66,7 +66,7 @@ class requestEndViewController: UIViewController {
         backLabel.hidden = true
         backLabel1.hidden = true
         okButton.hidden = true
-        cancelButton.hidden = true
+
         let myAlert: UIAlertController = UIAlertController(title: "お願い", message: "暗証番号を入力してください。", preferredStyle: .Alert)
         
         // OKのアクションを作成する.
@@ -115,7 +115,7 @@ class requestEndViewController: UIViewController {
                                 self.backLabel.hidden = false
                                 self.backLabel1.hidden = false
                                 self.okButton.hidden = false
-                                self.cancelButton.hidden = false
+                                
                                 SVProgressHUD.dismiss()
                                 
                                 
@@ -136,7 +136,6 @@ class requestEndViewController: UIViewController {
                             self.backLabel.hidden = false
                             self.backLabel1.hidden = false
                             self.okButton.hidden = false
-                            self.cancelButton.hidden = false
                             SVProgressHUD.dismiss()
                             }else{
                                 

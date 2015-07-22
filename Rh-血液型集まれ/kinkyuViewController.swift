@@ -40,32 +40,26 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
     var info = [PFObject]()
     
     
-    
+    var timer : NSTimer!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        self.performSegueWithIdentifier("toSubViewController",sender: nil)
-        self.presentViewController(agreementViewController(), animated: true, completion: nil)
-        
-        
-        
-        
-        //UserDefaultの生成.
         var myUserDafault:NSUserDefaults = NSUserDefaults()
         
         //登録されているUserDefaultから訪問数を呼び出す.
         var count:Int = myUserDafault.integerForKey("VisitCount")
-
+        
         
         NSLog(String(count))
-//        if(count == 0){
-//            performSegueWithIdentifier("segue",sender: nil)
-//
-//        }else{
-//            
-//        }
+        if(count == 0){
+        //タイマーを作る.
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
+    
+    
+        }
+    
+        
+        
+        
         
         
         picker = UIImagePickerController()
@@ -134,6 +128,45 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
             
         }
 
+    
+    
+    //NSTimerIntervalで指定された秒数毎に呼び出されるメソッド.
+    func onUpdate(timer : NSTimer){
+        
+        //UserDefaultの生成.
+        var myUserDafault:NSUserDefaults = NSUserDefaults()
+        
+        //登録されているUserDefaultから訪問数を呼び出す.
+        var count:Int = myUserDafault.integerForKey("VisitCount")
+        
+        
+        NSLog(String(count))
+        if(count == 0){
+            // UIAlertControllerを作成する.
+            let myAlert: UIAlertController = UIAlertController(title: "お願い", message: "Rh-をご利用いただきありがとうございます。\nまずアプリを始める前に利用規約をお読みください。", preferredStyle: .Alert)
+            
+            // OKのアクションを作成する.
+            let myOkAction = UIAlertAction(title: "利用契約を読む", style: .Default) { action in
+                println("Action OK!!")
+                
+                self.performSegueWithIdentifier("a", sender: nil)
+            }
+            
+            // OKのActionを追加する.
+            myAlert.addAction(myOkAction)
+            
+            // UIAlertを発動する.
+            presentViewController(myAlert, animated: true, completion: nil)
+            
+            timer.invalidate()
+        }else{
+            
+        }
+
+        
+    }
+    
+    
     
         func textView(textView: UITextView, shouldChangeTextInRange range: NSRange,
             replacementText text: String) -> Bool {
@@ -262,6 +295,7 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         NSUserDefaults.standardUserDefaults().setObject(koment.text,forKey:"comment")
         NSUserDefaults.standardUserDefaults().setObject(name.text,forKey:"name")
         NSLog("最後")
+        
     self.performSegueWithIdentifier("check", sender: nil)
     }
     

@@ -462,12 +462,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enQ-th-CJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2957.5" y="-143.5"/>
+            <point key="canvasLocation" x="3208.5" y="-162.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="HcJ-7h-o5l">
             <objects>
-                <viewController storyboardIdentifier="a" id="qB9-V6-4F1" customClass="agreementViewController" customModule="Rh_血液型集まれ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="a" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qB9-V6-4F1" customClass="agreementViewController" customModule="Rh_血液型集まれ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qzi-09-wuz"/>
                         <viewControllerLayoutGuide type="bottom" id="EMQ-S6-EVg"/>
@@ -479,7 +479,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkb-cV-gaW">
                                 <rect key="frame" x="0.0" y="20" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">利用規約
+                                <string key="text">利用規約
 
 この利用規約（以下，「本規約」といいます。）は，＿＿＿＿＿（以下，「当社」といいます。）がこのアプリ上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。
 
@@ -548,7 +548,7 @@
 第12条（準拠法・裁判管轄）
 本規約の解釈にあたっては，日本法を準拠法とします。
 本サービスに関して紛争が生じた場合には，当社の本店所在地を管轄する裁判所を専属的合意管轄とします。
-以上</mutableString>
+以上</string>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -573,6 +573,9 @@
                                     <color key="titleColor" red="0.61432456369999999" green="0.0" blue="0.85536910079999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ok" destination="qB9-V6-4F1" eventType="touchUpInside" id="8cQ-mY-Q2L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -803,12 +806,12 @@
                         <outlet property="koment" destination="JpL-Iv-QkF" id="4Zp-ek-O8c"/>
                         <outlet property="name" destination="wLF-2g-If6" id="yvc-9O-1Qm"/>
                         <outlet property="segmentedControl" destination="Pgj-Pa-Q1I" id="Pe4-Fu-XGw"/>
-                        <segue destination="qB9-V6-4F1" kind="modal" identifier="toSubViewController" id="RsR-9F-zbP"/>
+                        <segue destination="qB9-V6-4F1" kind="modal" identifier="a" id="lsI-SB-Sbb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bis-IY-z3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237.5" y="-143.5"/>
+            <point key="canvasLocation" x="1266.5" y="-34.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cxh-vm-Gst">
@@ -1042,7 +1045,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3a-ON-gzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531.5" y="-143.5"/>
+            <point key="canvasLocation" x="2525.5" y="-143.5"/>
         </scene>
         <!--一覧-->
         <scene sceneID="hTy-cL-5dl">
@@ -1156,6 +1159,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="u3C-9f-97c"/>
-        <segue reference="UR6-UH-ubU"/>
+        <segue reference="ofN-Dn-f2D"/>
     </inferredMetricsTieBreakers>
 </document>
