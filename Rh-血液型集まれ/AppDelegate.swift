@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var iphone4 : CGRect = CGRectMake(0.0, 0.0, 320.0, 480.0)
     var iphone5 : CGRect = CGRectMake(0.0, 0.0, 320.0, 568.0)
     var iphone6 : CGRect = CGRectMake(0.0, 0.0, 375.0, 667.0)
+    var iphone6Plus : CGRect = CGRectMake(0.0, 0.0, 414.0, 736.0)
     
     var window: UIWindow?
     var myUserDafault:NSUserDefaults = NSUserDefaults()
@@ -82,6 +83,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             
             NSLog("iphone6")
+        }else if(rect == iphone6Plus){
+            var storyboard: UIStoryboard = UIStoryboard(name: "5.5inchStoryboard", bundle: NSBundle.mainBundle())
+            var mainViewController: UIViewController = storyboard.instantiateInitialViewController() as UIViewController
+            self.window?.rootViewController = mainViewController
+            NSLog("iphone6Plus")
         }
         
         

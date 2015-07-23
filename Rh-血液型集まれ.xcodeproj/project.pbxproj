@@ -17,6 +17,7 @@
 		2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */; };
 		2DD02EF01B53EEC500A74AB5 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */; };
 		2DE512E01B4A90980056B8B0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE512DF1B4A90980056B8B0 /* MapKit.framework */; };
+		2DE55FF01B6106D800597988 /* 5.5inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE55FEF1B6106D800597988 /* 5.5inchStoryboard.storyboard */; };
 		2DE821631B50F8A5001E2EAA /* kankaku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821611B50F8A5001E2EAA /* kankaku.jpg */; };
 		2DE821641B50F8A5001E2EAA /* saiketu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821621B50F8A5001E2EAA /* saiketu.jpg */; };
 		2DE821661B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821651B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png */; };
@@ -86,6 +87,7 @@
 		2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		2DE02E281B4FE7E400659CD6 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		2DE512DF1B4A90980056B8B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2DE55FEF1B6106D800597988 /* 5.5inchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 5.5inchStoryboard.storyboard; sourceTree = "<group>"; };
 		2DE821611B50F8A5001E2EAA /* kankaku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kankaku.jpg; path = ../kankaku.jpg; sourceTree = "<group>"; };
 		2DE821621B50F8A5001E2EAA /* saiketu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = saiketu.jpg; path = ../saiketu.jpg; sourceTree = "<group>"; };
 		2DE821651B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-07-11 16.14.04.png"; path = "../スクリーンショット 2015-07-11 16.14.04.png"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				4BA3EDDC1AC820D1005F7678 /* Main.storyboard */,
 				2DD02EEB1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard */,
 				2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */,
+				2DE55FEF1B6106D800597988 /* 5.5inchStoryboard.storyboard */,
 				2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */,
 			);
 			name = StoryBoard;
@@ -375,6 +378,7 @@
 				4BB3CC7C1B085C4800F7895F /* lionRed.png in Resources */,
 				2DE8216B1B521824001E2EAA /* mo.png in Resources */,
 				2D4CDBFF1B3E21B9001E9A4D /* house.png in Resources */,
+				2DE55FF01B6106D800597988 /* 5.5inchStoryboard.storyboard in Resources */,
 				4BA3EDDE1AC820D1005F7678 /* Main.storyboard in Resources */,
 				2D7F54251B480AB500FD9306 /* IMG_2279.jpg in Resources */,
 				2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */,
