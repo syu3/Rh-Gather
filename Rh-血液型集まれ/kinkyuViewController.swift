@@ -69,16 +69,16 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         
         
         
-        
-        jushoField.text = ""
-        name.text = ""
-        koment.text = ""
-        byoin.text = ""
-        ka.text = ""
-        
-        
-        byoin.text = ""
-        jushoField.text = ""
+//        
+//        jushoField.text = ""
+//        name.text = ""
+//        koment.text = ""
+//        byoin.text = ""
+//        ka.text = ""
+//        
+//        
+//        byoin.text = ""
+//        jushoField.text = ""
         NSLog("transmissionNumberは%d",transmissionNumber)
         
         if transmissionNumber == 1{

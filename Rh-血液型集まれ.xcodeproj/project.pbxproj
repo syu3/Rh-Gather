@@ -24,6 +24,13 @@
 		2DE8216A1B521824001E2EAA /* ru.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821671B521824001E2EAA /* ru.png */; };
 		2DE8216B1B521824001E2EAA /* mo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821681B521824001E2EAA /* mo.png */; };
 		2DE8216C1B521824001E2EAA /* do.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821691B521824001E2EAA /* do.png */; };
+		2DED92CE1B64FC4A00C3C28B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DED92CD1B64FC4A00C3C28B /* AudioToolbox.framework */; };
+		2DED92D01B64FC5700C3C28B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DED92CF1B64FC5700C3C28B /* CFNetwork.framework */; };
+		2DED92D21B64FC6300C3C28B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DED92D11B64FC6300C3C28B /* CoreGraphics.framework */; };
+		2DED92D31B64FC8900C3C28B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30BBB41B088F1D0003B53F /* QuartzCore.framework */; };
+		2DED92D51B64FC9200C3C28B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DED92D41B64FC9200C3C28B /* Security.framework */; };
+		2DED92D71B64FC9F00C3C28B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DED92D61B64FC9F00C3C28B /* StoreKit.framework */; };
+		2DED92D91B64FCAA00C3C28B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DED92D81B64FCAA00C3C28B /* SystemConfiguration.framework */; };
 		2DF37F8A1B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */; };
 		30127CF624C6C88C4AE3B15C /* libPods-Rh-血液型集まれ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BCBCC471A353814BEB609C /* libPods-Rh-血液型集まれ.a */; };
 		4B4EC8511ACA7CD200590F9D /* DataUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EC8501ACA7CD200590F9D /* DataUtility.swift */; };
@@ -94,6 +101,14 @@
 		2DE821671B521824001E2EAA /* ru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ru.png; path = ../ru.png; sourceTree = "<group>"; };
 		2DE821681B521824001E2EAA /* mo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mo.png; path = ../mo.png; sourceTree = "<group>"; };
 		2DE821691B521824001E2EAA /* do.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = do.png; path = ../do.png; sourceTree = "<group>"; };
+		2DED92CD1B64FC4A00C3C28B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2DED92CF1B64FC5700C3C28B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2DED92D11B64FC6300C3C28B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2DED92D41B64FC9200C3C28B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2DED92D61B64FC9F00C3C28B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2DED92D81B64FCAA00C3C28B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2DED92DA1B64FCB600C3C28B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2DED92DC1B64FCC100C3C28B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ヒラギノ角ゴ Pro W3.otf"; path = "../ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
 		4B30BBB41B088F1D0003B53F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4B3470631ACAECD700609589 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -135,9 +150,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DED92D91B64FCAA00C3C28B /* SystemConfiguration.framework in Frameworks */,
+				2DED92D71B64FC9F00C3C28B /* StoreKit.framework in Frameworks */,
+				2DED92D51B64FC9200C3C28B /* Security.framework in Frameworks */,
+				2DED92D31B64FC8900C3C28B /* QuartzCore.framework in Frameworks */,
+				4BA52DDD1AEFB02D00D11DFD /* CoreLocation.framework in Frameworks */,
+				2DED92D21B64FC6300C3C28B /* CoreGraphics.framework in Frameworks */,
+				2DED92D01B64FC5700C3C28B /* CFNetwork.framework in Frameworks */,
+				2DED92CE1B64FC4A00C3C28B /* AudioToolbox.framework in Frameworks */,
 				2DE512E01B4A90980056B8B0 /* MapKit.framework in Frameworks */,
 				4BD194A61AF4C4480087946E /* CoreImage.framework in Frameworks */,
-				4BA52DDD1AEFB02D00D11DFD /* CoreLocation.framework in Frameworks */,
 				4BBF4C2D1ACAF94100E60FED /* Foundation.framework in Frameworks */,
 				30127CF624C6C88C4AE3B15C /* libPods-Rh-血液型集まれ.a in Frameworks */,
 			);
@@ -261,6 +283,14 @@
 		72910D228CE1A820223957FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DED92DC1B64FCC100C3C28B /* libsqlite3.dylib */,
+				2DED92DA1B64FCB600C3C28B /* libz.dylib */,
+				2DED92D81B64FCAA00C3C28B /* SystemConfiguration.framework */,
+				2DED92D61B64FC9F00C3C28B /* StoreKit.framework */,
+				2DED92D41B64FC9200C3C28B /* Security.framework */,
+				2DED92D11B64FC6300C3C28B /* CoreGraphics.framework */,
+				2DED92CF1B64FC5700C3C28B /* CFNetwork.framework */,
+				2DED92CD1B64FC4A00C3C28B /* AudioToolbox.framework */,
 				2DE02E281B4FE7E400659CD6 /* SafariServices.framework */,
 				2DE512DF1B4A90980056B8B0 /* MapKit.framework */,
 				4B30BBB41B088F1D0003B53F /* QuartzCore.framework */,
@@ -589,15 +619,18 @@
 			baseConfigurationReference = 71A6B598256E0C519D45C740 /* Pods-Rh-血液型集まれ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+				);
 				INFOPLIST_FILE = "Rh-血液型集まれ/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4a547388-8bdb-4e6d-82ad-c40969ae31a3";
 				SDKROOT = iphoneos8.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -610,15 +643,18 @@
 			baseConfigurationReference = F657B600934F91113A00CB91 /* Pods-Rh-血液型集まれ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+				);
 				INFOPLIST_FILE = "Rh-血液型集まれ/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4a547388-8bdb-4e6d-82ad-c40969ae31a3";
 				SDKROOT = iphoneos8.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;

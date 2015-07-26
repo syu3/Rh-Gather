@@ -49,14 +49,12 @@ class KakuninViewController: UIViewController {
                 self.info.append(object as PFObject)
                 
             }
-            self.numberInt = self.info.first!.objectForKey("number") as Int
+                        //permissionの設定.
+                        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
+                        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
             
-            //            //permissionの設定.
-            //            let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
-            //            UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-            //
-            //            //バッジの数の設定.
-            //            UIApplication.sharedApplication().applicationIconBadgeNumber = self.number
+                        //バッジの数の設定.
+                        UIApplication.sharedApplication().applicationIconBadgeNumber = 99
         }
         
         
@@ -69,54 +67,54 @@ class KakuninViewController: UIViewController {
         if(picture == nil){
             NSLog("nilnilnil")
         }else{
-        NSLog("kakunin")
-        //        // リサイズ
-        let size = CGSize(width: 60, height: 80)
-        UIGraphicsBeginImageContext(size)
-        picture.drawInRect(CGRectMake(0, 0, size.width, size.height))
-        var resizeImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        let view2: UIImageView = UIImageView(frame: CGRectMake(0,0,150,150))
-        picture = resizeImage
-        
-        
-        
-        
-        
-        
-        
-        // NSDictionary型のoptionを生成。顔認識の精度を追加する.
-        var options : NSDictionary = NSDictionary(object: CIDetectorAccuracyHigh, forKey: CIDetectorAccuracy)
-        
-        // CIDetectorを生成。顔認識をするのでTypeはCIDetectorTypeFace.
-        var detector : CIDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: options)
-        
-        // detectorで認識した顔のデータを入れておくNSArray.
-        var faces : NSArray = detector.featuresInImage(CIImage(image: picture))
-        
-        //         UIKitは画面左上に原点があるが、CoreImageは画面左下に原点があるのでそれを揃えなくてはならない.
-        //         CoreImageとUIKitの原点を画面左上に統一する処理.
-        var transform : CGAffineTransform = CGAffineTransformMakeScale(1, -1)
-        transform = CGAffineTransformTranslate(transform, 0, -pictureImageView.bounds.size.height)
-        
-        // 検出された顔のデータをCIFaceFeatureで処理.
-        var feature : CIFaceFeature = CIFaceFeature()
-        facialRecognition = 1
-        for feature in faces {
-            facialRecognition = 2
-            // 座標変換.
-            let faceRect : CGRect = CGRectApplyAffineTransform(feature.bounds, transform)
+            NSLog("kakunin")
+            //        // リサイズ
+            let size = CGSize(width: 60, height: 80)
+            UIGraphicsBeginImageContext(size)
+            picture.drawInRect(CGRectMake(0, 0, size.width, size.height))
+            var resizeImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            let view2: UIImageView = UIImageView(frame: CGRectMake(0,0,150,150))
+            picture = resizeImage
             
-            // 画像の顔の周りを線で囲うUIViewを生成.
-            //            var faceOutline = UIView(frame: faceRect)
-            //            faceOutline.layer.borderWidth = 1
-            //            faceOutline.layer.borderColor = UIColor.redColor().CGColor
-            //            pictureImageView.addSubview(faceOutline)
             
-            NSLog("顔認識")
-        }
-        
-        
+            
+            
+            
+            
+            
+            // NSDictionary型のoptionを生成。顔認識の精度を追加する.
+            var options : NSDictionary = NSDictionary(object: CIDetectorAccuracyHigh, forKey: CIDetectorAccuracy)
+            
+            // CIDetectorを生成。顔認識をするのでTypeはCIDetectorTypeFace.
+            var detector : CIDetector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: options)
+            
+            // detectorで認識した顔のデータを入れておくNSArray.
+            var faces : NSArray = detector.featuresInImage(CIImage(image: picture))
+            
+            //         UIKitは画面左上に原点があるが、CoreImageは画面左下に原点があるのでそれを揃えなくてはならない.
+            //         CoreImageとUIKitの原点を画面左上に統一する処理.
+            var transform : CGAffineTransform = CGAffineTransformMakeScale(1, -1)
+            transform = CGAffineTransformTranslate(transform, 0, -pictureImageView.bounds.size.height)
+            
+            // 検出された顔のデータをCIFaceFeatureで処理.
+            var feature : CIFaceFeature = CIFaceFeature()
+            facialRecognition = 1
+            for feature in faces {
+                facialRecognition = 2
+                // 座標変換.
+                let faceRect : CGRect = CGRectApplyAffineTransform(feature.bounds, transform)
+                
+                // 画像の顔の周りを線で囲うUIViewを生成.
+                //            var faceOutline = UIView(frame: faceRect)
+                //            faceOutline.layer.borderWidth = 1
+                //            faceOutline.layer.borderColor = UIColor.redColor().CGColor
+                //            pictureImageView.addSubview(faceOutline)
+                
+                NSLog("顔認識")
+            }
+            
+            
         }
         
         
@@ -130,7 +128,7 @@ class KakuninViewController: UIViewController {
         indispensableLabel6.hidden = true
         indispensableLabel7.hidden = true
         indispensableLabel8.hidden = true
-
+        
         
         var pinNumber1 = arc4random_uniform(9)
         var pinNumber2 = arc4random_uniform(9)
@@ -141,7 +139,7 @@ class KakuninViewController: UIViewController {
         var pin3 = String(pinNumber3)
         var pin4 = String(pinNumber4)
         //パスワードを再発行します！
-
+        
         
         
         pinCode = pin1 + pin2 + pin3 + pin4
@@ -242,9 +240,17 @@ class KakuninViewController: UIViewController {
             }else{
                 //for文でparseのkinkyuClassのpinCode(String)カラムの情報をとってきた配列でとってくる
                 //pinCode(parse側)とpinCode(今発行されている)が同じだったら再発行
-                
+                NSLog("hheelloo")
                 //ここに書くよー
-                var number = numberInt++
+//                if(self.info.first!.objectForKey("number") == nil){
+//                    numberInt = 1
+//                    NSLog("hello")
+//                }else{
+//                    self.numberInt = self.info.first!.objectForKey("number") as Int
+//                    numberInt = numberInt++
+//                }
+//                
+                
                 
                 SVProgressHUD.show()
                 NSLog("hello")
@@ -259,7 +265,7 @@ class KakuninViewController: UIViewController {
                 object["pinCode"] = pinCode
                 object["zikoku"] = self.getDate()
                 object["end"] = "noEnd"
-                object["number"] = number
+//                object["number"] = numberInt
                 //        object["jusho"] = _juusho
                 //処理している裏側で、パースにデータを保存
                 object.saveInBackgroundWithBlock { (succeeded, error) -> Void in
