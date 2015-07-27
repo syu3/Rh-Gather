@@ -91,8 +91,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-        
 
+
+        UIApplication.sharedApplication().idleTimerDisabled = true
         return true
     }
 

@@ -630,7 +630,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4a547388-8bdb-4e6d-82ad-c40969ae31a3";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos8.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -654,7 +654,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4a547388-8bdb-4e6d-82ad-c40969ae31a3";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos8.2;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rh-血液型集まれ-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;

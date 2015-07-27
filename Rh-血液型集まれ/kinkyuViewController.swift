@@ -119,9 +119,9 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
             self.myLocationManager.requestAlwaysAuthorization()
         }
         
-        // 取得精度の設定.
+        //取得精度の設定.
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBest
-        // 取得頻度の設定.
+        //取得頻度の設定.
         myLocationManager.distanceFilter = 100
         myLocationManager.startUpdatingLocation()
         
