@@ -11,11 +11,13 @@
 		2D4CDBFF1B3E21B9001E9A4D /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDBFE1B3E21B9001E9A4D /* house.png */; };
 		2D4CDC011B3E21BC001E9A4D /* house のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDC001B3E21BC001E9A4D /* house のコピー.png */; };
 		2D4CDC031B3E2387001E9A4D /* hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4CDC021B3E2387001E9A4D /* hospital.png */; };
-		2D7F54251B480AB500FD9306 /* IMG_2279.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7F54241B480AB500FD9306 /* IMG_2279.jpg */; };
+		2D577F581B6D00690057AF60 /* IMG_2279.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D577F571B6D00690057AF60 /* IMG_2279.jpg */; };
 		2DBC2EAE1B3FF09500C051FE /* icon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DBC2EAD1B3FF09500C051FE /* icon 2.png */; };
 		2DD02EEC1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EEB1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard */; };
 		2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */; };
 		2DD02EF01B53EEC500A74AB5 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */; };
+		2DE233B31B686B44004FF8FA /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE233B11B686B44004FF8FA /* back.png */; };
+		2DE233B41B686B44004FF8FA /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE233B21B686B44004FF8FA /* back1.png */; };
 		2DE512E01B4A90980056B8B0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE512DF1B4A90980056B8B0 /* MapKit.framework */; };
 		2DE55FF01B6106D800597988 /* 5.5inchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE55FEF1B6106D800597988 /* 5.5inchStoryboard.storyboard */; };
 		2DE821631B50F8A5001E2EAA /* kankaku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DE821611B50F8A5001E2EAA /* kankaku.jpg */; };
@@ -87,12 +89,14 @@
 		2D4CDBFE1B3E21B9001E9A4D /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = ../house.png; sourceTree = "<group>"; };
 		2D4CDC001B3E21BC001E9A4D /* house のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house のコピー.png"; path = "../house のコピー.png"; sourceTree = "<group>"; };
 		2D4CDC021B3E2387001E9A4D /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hospital.png; path = ../hospital.png; sourceTree = "<group>"; };
-		2D7F54241B480AB500FD9306 /* IMG_2279.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2279.jpg; path = ../IMG_2279.jpg; sourceTree = "<group>"; };
+		2D577F571B6D00690057AF60 /* IMG_2279.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2279.jpg; sourceTree = "<group>"; };
 		2DBC2EAD1B3FF09500C051FE /* icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon 2.png"; path = "../icon 2.png"; sourceTree = "<group>"; };
 		2DD02EEB1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inchStoryboard.storyboard; sourceTree = "<group>"; };
 		2DD02EED1B53EEA700A74AB5 /* 4inchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 4inchStoryboard.storyboard; sourceTree = "<group>"; };
 		2DD02EEF1B53EEC500A74AB5 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		2DE02E281B4FE7E400659CD6 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		2DE233B11B686B44004FF8FA /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		2DE233B21B686B44004FF8FA /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
 		2DE512DF1B4A90980056B8B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2DE55FEF1B6106D800597988 /* 5.5inchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 5.5inchStoryboard.storyboard; sourceTree = "<group>"; };
 		2DE821611B50F8A5001E2EAA /* kankaku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kankaku.jpg; path = ../kankaku.jpg; sourceTree = "<group>"; };
@@ -257,13 +261,15 @@
 		4BA9F27D1AD2AE3400520793 /* ImageFile */ = {
 			isa = PBXGroup;
 			children = (
+				2D577F571B6D00690057AF60 /* IMG_2279.jpg */,
+				2DE233B11B686B44004FF8FA /* back.png */,
+				2DE233B21B686B44004FF8FA /* back1.png */,
 				2DE821671B521824001E2EAA /* ru.png */,
 				2DE821681B521824001E2EAA /* mo.png */,
 				2DE821691B521824001E2EAA /* do.png */,
 				2DE821651B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png */,
 				2DE821611B50F8A5001E2EAA /* kankaku.jpg */,
 				2DE821621B50F8A5001E2EAA /* saiketu.jpg */,
-				2D7F54241B480AB500FD9306 /* IMG_2279.jpg */,
 				2DF37F891B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf */,
 				2DBC2EAD1B3FF09500C051FE /* icon 2.png */,
 				2D4CDC021B3E2387001E9A4D /* hospital.png */,
@@ -367,6 +373,11 @@
 					4BA3EDD21AC820D1005F7678 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 8ZAWDKU8Y5;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					4BA3EDE71AC820D1005F7678 = {
 						CreatedOnToolsVersion = 6.2;
@@ -400,9 +411,11 @@
 			files = (
 				4B8952221ACD467F00B0D4EC /* sizuku.png in Resources */,
 				2DD02EF01B53EEC500A74AB5 /* iPadStoryboard.storyboard in Resources */,
+				2DE233B31B686B44004FF8FA /* back.png in Resources */,
 				4BE32BC91ACC27D00052DE60 /* juuzi.png in Resources */,
 				2DF37F8A1B457062004835D2 /* ヒラギノ角ゴ Pro W3.otf in Resources */,
 				2DE821661B50F9D8001E2EAA /* スクリーンショット 2015-07-11 16.14.04.png in Resources */,
+				2D577F581B6D00690057AF60 /* IMG_2279.jpg in Resources */,
 				4B56473A1ACAD461006E70A6 /* btn057_09.png in Resources */,
 				2D4CDC011B3E21BC001E9A4D /* house のコピー.png in Resources */,
 				4BB3CC7C1B085C4800F7895F /* lionRed.png in Resources */,
@@ -410,11 +423,11 @@
 				2D4CDBFF1B3E21B9001E9A4D /* house.png in Resources */,
 				2DE55FF01B6106D800597988 /* 5.5inchStoryboard.storyboard in Resources */,
 				4BA3EDDE1AC820D1005F7678 /* Main.storyboard in Resources */,
-				2D7F54251B480AB500FD9306 /* IMG_2279.jpg in Resources */,
 				2DD02EEE1B53EEA700A74AB5 /* 4inchStoryboard.storyboard in Resources */,
 				4BA3EDE31AC820D1005F7678 /* LaunchScreen.xib in Resources */,
 				2DD02EEC1B53EE9800A74AB5 /* 3.5inchStoryboard.storyboard in Resources */,
 				2DE8216C1B521824001E2EAA /* do.png in Resources */,
+				2DE233B41B686B44004FF8FA /* back1.png in Resources */,
 				2DBC2EAE1B3FF09500C051FE /* icon 2.png in Resources */,
 				2D4CDC031B3E2387001E9A4D /* hospital.png in Resources */,
 				2DE821641B50F8A5001E2EAA /* saiketu.jpg in Resources */,

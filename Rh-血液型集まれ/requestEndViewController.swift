@@ -22,14 +22,10 @@ class requestEndViewController: UIViewController {
     @IBOutlet var cancelButton : UIButton!
     @IBOutlet var okButton : UIButton!
     var info = [PFObject]()
-    @IBOutlet var hospitalNameLabel : UILabel!//病院名
-    @IBOutlet var currentPlaceLabel : UILabel!//現在地
-    @IBOutlet var addressLabel : UILabel!//住所
-    @IBOutlet var bloodTypeLabel : UILabel!//血液型
-    @IBOutlet var commentLabel : UILabel!//コメント
-    @IBOutlet var nameLabel : UILabel!//名前
-    @IBOutlet var currentTimeLabel : UILabel!//現在時刻
-    
+    @IBOutlet var resultLabel : UILabel!
+    @IBOutlet var yesButton : UIButton!
+    @IBOutlet var noButton : UIButton!
+    @IBOutlet var resultBackLabel : UILabel!
     
     var pinTextField : UITextField!//暗証番号を入力するためのTextField
     var pinCodeString : NSString!
@@ -50,7 +46,10 @@ class requestEndViewController: UIViewController {
         self.upDateButtonImage.hidden = true
         self.upDateImage.hidden = true
         self.upDateLabel.hidden = true
-        
+        self.resultBackLabel.hidden = true
+        self.resultLabel.hidden = true
+        self.yesButton.hidden = true
+        self.noButton.hidden = true
         self.loadData { (objects, error) -> () in
             for object in objects {
                 self.info.append(object as PFObject)
@@ -62,7 +61,7 @@ class requestEndViewController: UIViewController {
     }
     
     @IBAction func ok(){
-        
+        numer = 0
         backLabel.hidden = true
         backLabel1.hidden = true
         okButton.hidden = true
@@ -98,29 +97,18 @@ class requestEndViewController: UIViewController {
                             object["end"] = "end"
                             object.saveInBackgroundWithBlock { (succeeded, error) -> Void in
                                 NSLog("succeededは%@",succeeded)
-                                var alert = UIAlertView()
-                                alert.title = "依頼を終了しました！"
-                                alert.message = "依頼を終了しました"
-                                alert.addButtonWithTitle("OK")
-                                alert.show()
+                                self.resultBackLabel.hidden = false
+                                self.resultLabel.hidden = false
+                                self.yesButton.hidden = false
+                                self.resultLabel.text = "依頼を終了しました"
                                 
-                                self.upDateBackGround.hidden = false
-                                self.upDateButton.hidden = false
-                                self.upDateButtonImage.hidden = false
-                                self.upDateImage.hidden = false
-                                self.upDateLabel.hidden = false
 
-                                
-                                
-                                self.backLabel.hidden = false
-                                self.backLabel1.hidden = false
-                                self.okButton.hidden = false
                                 
                                 SVProgressHUD.dismiss()
                                 
                                 
                                 
-                                
+                     
                                 
 
                             }
@@ -128,15 +116,13 @@ class requestEndViewController: UIViewController {
                         }else{
                             self.numer = self.numer + 1
                             if(self.numer == 1){
-                            var alert = UIAlertView()
-                            alert.title = "注意"
-                            alert.message = "暗証番号が一致しません。"
-                            alert.addButtonWithTitle("OK")
-                            alert.show()
-                            self.backLabel.hidden = false
-                            self.backLabel1.hidden = false
-                            self.okButton.hidden = false
+                            self.resultBackLabel.hidden = false
+                            self.resultLabel.hidden = false
+                            self.noButton.hidden = false
+                            self.resultLabel.text = "暗証番号が一致しません"
+                            
                             SVProgressHUD.dismiss()
+//                            self.numer = 0
                             }else{
                                 
                             }
@@ -180,5 +166,30 @@ class requestEndViewController: UIViewController {
         }
     }
     
+    
+    
+    @IBAction func yButton(){
+        self.resultBackLabel.hidden = true
+        self.resultLabel.hidden = true
+        self.yesButton.hidden = true
+        self.noButton.hidden = true
+        self.upDateBackGround.hidden = false
+        self.upDateButton.hidden = false
+        self.upDateButtonImage.hidden = false
+        self.upDateImage.hidden = false
+        self.upDateLabel.hidden = false
+        self.backLabel.hidden = false
+        self.backLabel1.hidden = false
+        self.okButton.hidden = false
+    }
+    @IBAction func nButton(){
+        self.resultBackLabel.hidden = true
+        self.resultLabel.hidden = true
+        self.noButton.hidden = true
+        self.yesButton.hidden = true
+        self.backLabel.hidden = false
+        self.backLabel1.hidden = false
+        self.okButton.hidden = false
+    }
     
 }

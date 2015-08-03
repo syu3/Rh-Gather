@@ -26,6 +26,8 @@ class informationaViewController: UIViewController {
     var endTheState = ""
     var naiyou = 0
     var number1 = 0
+    var infomationNumber = 0
+    var myUserDafault:NSUserDefaults = NSUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,6 +100,14 @@ class informationaViewController: UIViewController {
         number1 = 0
         NSLog("pictureは%d",pictures.count)
         //numberにpicture.countを入れる
+        infomationNumber = pictures.count
+        //登録されているUserDefaultに+1する
+       
+        
+        //値を登録する
+        myUserDafault.setObject(infomationNumber, forKey: "infomationNumber")
+        
+        
         number = pictures.count
         NSLog("numberは%d",number)
         return pictures.count
@@ -214,5 +224,32 @@ class informationaViewController: UIViewController {
             NSLog("endは%@、selectValueは%d",end,selectValue)
             
         }
-    } 
+    }
+    
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        self.loadData { (pictures, error) -> () in
+            self.pictures = pictures
+            self.tableView.reloadData()
+        }
+        var number : Int = myUserDafault.integerForKey("infomationNumber")
+        if(infomationNumber == number){
+            NSLog("更新なし")
+        }else{
+            NSLog("更新あり")
+            var nokori = number - infomationNumber
+            //permissionの設定.
+            let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+            
+            //バッジの数の設定.
+            UIApplication.sharedApplication().applicationIconBadgeNumber = nokori
+
+            var string = "background"
+            NSLog(string)
+            completionHandler(UIBackgroundFetchResult.NewData)
+        }
+        
+    }
+
+    
 }

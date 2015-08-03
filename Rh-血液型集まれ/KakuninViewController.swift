@@ -49,13 +49,7 @@ class KakuninViewController: UIViewController {
                 self.info.append(object as PFObject)
                 
             }
-                        //permissionの設定.
-                        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
-                        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-            
-                        //バッジの数の設定.
-                        UIApplication.sharedApplication().applicationIconBadgeNumber = 99
-        }
+         }
         
         
         

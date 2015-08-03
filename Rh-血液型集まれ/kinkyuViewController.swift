@@ -298,7 +298,7 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
         //        let view2: UIImageView = UIImageView(frame: CGRectMake(0,0,150,150))
         //        picture = resizeImage
         
-        // uidを端末に記録
+        // uidを端末に記録 
         NSLog("病院は%@",byoin.text)
         NSUserDefaults.standardUserDefaults().setObject(byoin.text,forKey:"hospital")
         NSUserDefaults.standardUserDefaults().setObject(ka.text,forKey:"currentPlace")
@@ -390,5 +390,9 @@ class kinkyuViewController: UIViewController,UITextFieldDelegate,UITextViewDeleg
             self.view.center = CGPointMake(self.view.center.x, self.view.center.y + 50)
             }, completion: nil)
     }
+    
+    
+    
+    
     
 }
